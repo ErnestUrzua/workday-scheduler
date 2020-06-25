@@ -104,3 +104,10 @@ textarea{
   background-color: gray;
 }
 
+.fa-save:hover {
+  color: #ff0000;
+}
+
+div:hover {
+  background-color: #a4adff;
+}

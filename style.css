@@ -20,6 +20,7 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  padding: 10px;
 }
 
 .description{
@@ -90,3 +91,16 @@ textarea{
 .textarea {
  color: #e4483c;
 }
+
+/* changes the current hour block to this color */
+.currentHour {
+  visibility: hidden;
+  background-color: aquamarine;
+}
+
+/* sets the past hour time blocks to gray */
+.pastHour {
+  visibility: hidden;
+  background-color: gray;
+}
+

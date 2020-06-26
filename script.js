@@ -10,7 +10,7 @@ $(document).ready(function () {
   setInterval(updateTime, 1000);
 
   //moment().hour(Number);//this sets the hr
-  var currentHour = moment().hour() + 1; // this gets the hr +1 because function only does 0-23
+  var currentHour = moment().hour() ; // this gets the hr +1 because function only does 0-23
   console.log("Current hour is " + currentHour);
 
   //adds to the div class and changes it's color

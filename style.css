@@ -94,13 +94,13 @@ textarea{
 
 /* changes the current hour block to this color */
 .currentHour {
-  visibility: hidden;
+
   background-color: aquamarine;
 }
 
 /* sets the past hour time blocks to gray */
 .pastHour {
-  visibility: hidden;
+
   background-color: gray;
 }
 

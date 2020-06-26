@@ -1,7 +1,6 @@
 $(document).ready(function () {
   //set current time and Day
 
-
   //update the time continuously
   let updateTime = function () {
     let currentTime = moment().format("dddd, MMMM Do YYYY, h:mm:ss a")
@@ -20,23 +19,64 @@ $(document).ready(function () {
 
   //highlight curent hour
   function currentHr() {
-    
-       
+    $(".day").each(function() {
 
-    
-    const elements = document.querySelectorAll('div');
-    Array.from(elements).forEach((element, index) => {
-      // conditional logic here.. access element
-      if (currentHour === $(this).val())
+    var hour = parseInt($(this).attr("id"));
+    console.log(hour);
+    if (hour < currentHour){
+      $(this).addClass("pastHour");
+    }
+
+    else if (hour === currentHour){
+      $(this).removeClass("pastHour");
       $(this).addClass("currentHour");
-      $(this).css("visibility", "visible");
+    }
+    else {
+      $(this).removeClass("pastHour");
+      $(this).removeClass("currentHour");
+    }
+    
     })
+   
 
   }
 
   currentHr();
 
-  //gray out div containers that are past
+
+  //store <textarea> input in local storage
+  //when user presses save, 
+  $(".fa-save").click(function(){
+    // console.log("trying to save data");
+    var id = $(this).parent().attr("id");
+    var text = $(this).siblings(".event").val();// 
+    console.log(id,text);
+    
+    if (text !== null || text !== "") {
+      localStorage.setItem(id, text);
+    }
+  });
+
+  //be able to retrieve that data on refresh and populate the data
+  //$("#9 .event").val(localStorage.getItem("9"));
+
+
+  $(".event").each(function() {
+
+    var tempId = $(this).parent().attr("id");//grabbing parent-div attr-id
+    
+    $(this).val(localStorage.getItem(tempId));
+
+
+    // if (hour < currentHour){
+    //   $(this).addClass("pastHour");
+    // }
+    
+    })
+  
+
+  
+
 
 
 
@@ -53,10 +93,4 @@ $(document).ready(function () {
   //   //    // var eventDiv = $("#1");
   //   //     //append <textarea tags to div element
   //   //    // eventDiv.append("<textarea></textarea>");
-  //   //   }
-
-  // });
-
-
-
 });

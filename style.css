@@ -73,7 +73,7 @@ textarea{
 }
 
 #currentDay {
-  color: crimson;
+  color: #771479;
 }
 
 .day {
@@ -82,31 +82,43 @@ textarea{
   border-radius: 10px;
   outline: 1px;
   z-index: 1;
-  
-
 
 }
 
-
 .textarea {
- color: #e4483c;
+ color:  #771479;
 }
 
 /* changes the current hour block to this color */
 .currentHour {
 
-  background-color: aquamarine;
+  background-color: rgb(74, 255, 255);
 }
 
 /* sets the past hour time blocks to gray */
 .pastHour {
 
-  background-color: gray;
+  background-color: #bbbbbb;
+}
+
+.fa-save {
+  color: rgb(74, 255, 255); 
+  font-size: 35px;
+  padding: 0%;
+  margin: 0%;
+  left: 10%;
+  transition: all .25s ease-out;
+  transistion: 
 }
 
 .fa-save:hover {
-  color: #ff0000;
+  color: #771479;
+  font-size: 50px;
+  outline: 2px;
+  padding:0%;
+  margin:0%;
 }
+
 
 div:hover {
   background-color: #a4adff;

@@ -9,7 +9,7 @@
 [Link to Github repo](https://github.com/ErnestUrzua/workday-scheduler "Github Repo")
 
 ## Screenshots
-![alt text](/assets/ss2.jpg "home")
-![alt text](/assets/ss1.jpg "typing area")
+![alt text](./Assets/SS2.jpg "home")
+![alt text](./Assets/SS1.jpg "typing area")
 
 

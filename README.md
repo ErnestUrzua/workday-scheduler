@@ -8,8 +8,15 @@
 [Link to deployed page](https://ernesturzua.github.io/workday-scheduler/ "app website")    	  
 [Link to Github repo](https://github.com/ErnestUrzua/workday-scheduler "Github Repo")
 
+## Technologies
+- Javascript
+- CSS
+- Bootstrap
+- Jquery
+- momement.js
+
 ## Screenshots
-![alt text](/assets/SS1.jpg "home")
-![alt text](/assets/SS1.jpg "typing area")
+![screenshot1](./assets/SS1.jpg "homescreen")
+![screenshot2](./assets/SS1.jpg "typing area")
 
 
